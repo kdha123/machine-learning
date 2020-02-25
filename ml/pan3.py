@@ -9,7 +9,7 @@ from matplotlib import font_manager, rc
 d1 = pd.read_csv('data\\concat_1.csv')
 # print(d1)
 d2 = pd.read_csv('data\\concat_2.csv')
-# print(d2)
+# print(d2)[report['State'] == 'New Hampshire']
 d3 = pd.read_csv('data\\concat_3.csv')
 # print(d3)
 #

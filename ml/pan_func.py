@@ -58,17 +58,17 @@ titanic['null_rate'] = titanic.apply(rate_null, axis=1)
 print(titanic)
 
 # --------------
-# print("--"*30)
-# def cnt_null2(x):
-#     return x.shape[0] - x.count()
-#
-# def rate_null2(x):
-#     cnt = cnt_null2(x)
-#     return cnt/x.shape[0]
-#
-# df = pd.DataFrame({'a':[10,20,NAN,40,50], 'b':[100,200,300,NAN,NAN]})
-# # print(df)
-# # print(df.apply(cnt_null2))
-# print(df.apply(rate_null2, axis=1))
-# df['new'] = df.apply(rate_null2, axis=1)
+print("--"*30)
+def cnt_null2(x):
+    return x.shape[0] - x.count()
+
+def rate_null2(x):
+    cnt = cnt_null2(x)
+    return cnt/x.shape[0]
+
+df = pd.DataFrame({'a':[10,20,NAN,40,50], 'b':[100,200,300,NAN,NAN]})
 # print(df)
+# print(df.apply(cnt_null2))
+print(df.apply(rate_null2, axis=1))
+df['new'] = df.apply(rate_null2, axis=1)
+print(df)
