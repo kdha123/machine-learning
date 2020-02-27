@@ -5,6 +5,7 @@ import os
 #     for fname in glob.glob(path):
 #         print(fname)
 #         print(os.path.basename(fname))
+
 #         print(os.path.basename(fname)[:2])   #정답
 #     print(ord('A'))
 #     print(ord('a'),ord('z'))
